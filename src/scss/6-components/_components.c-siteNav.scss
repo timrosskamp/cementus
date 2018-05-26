@@ -1,0 +1,38 @@
+.c-siteNav {
+
+}
+
+.c-siteNav__list {
+
+}
+
+.c-siteNav__item {
+    margin-bottom: 0.5rem;
+}
+
+.c-siteNav__link {
+    text-decoration: none;
+    font-size: 5vh;
+    @include breakpoint('small'){
+        font-size: ms(2);
+    }
+    display: inline-block;
+
+    transition: padding-left 0.2s ease;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        border-bottom: 4px solid currentColor;
+        transition: width 0.2s ease;
+    }
+    &:hover {
+        padding-left: 2rem;
+        &:after {
+            width: 100%;
+        }
+    }
+}

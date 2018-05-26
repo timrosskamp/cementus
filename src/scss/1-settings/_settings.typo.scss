@@ -1,0 +1,15 @@
+@import 'modularscale-sass/stylesheets/modularscale';
+
+$modularscale: (
+	base: (18 / 16) * 1rem,
+	ratio: 1.2,
+	25rem: (
+		ratio: 1.2,
+	),
+	70rem: (
+		ratio: 1.4,
+	)
+);
+
+//$font-family--headline: 'Poppins', sans-serif;
+$font-family--paragraph: 'Poppins', sans-serif;

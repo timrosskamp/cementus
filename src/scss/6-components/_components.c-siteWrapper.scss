@@ -1,0 +1,14 @@
+.c-siteWrapper {
+    @include z-index('siteWrapper');
+    position: relative;
+    background: color('grey', 'xlight');
+	min-height: 100vh;
+
+    transition: transform 0.5s ease;
+    body.navOpen & {
+        transform: translate(calc(100vw - 40px), 80px);
+        @include breakpoint('medium'){
+            transform: translate(70vw, 80px);
+        }
+    }
+}

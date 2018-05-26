@@ -1,0 +1,28 @@
+.c-intro {
+    min-height: calc(100vh - 72px);
+    background-image: url('../img/home/intro.jpg');
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint('large'){
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            left: 40px;
+            bottom: 40px;
+            border: 4px solid color('white');
+        }
+    }
+}
+
+.c-intro__hl {
+    color: color('white');
+    text-align: center;
+}

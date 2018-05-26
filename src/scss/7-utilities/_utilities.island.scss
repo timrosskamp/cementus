@@ -1,0 +1,12 @@
+.u-island {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    @include breakpoint('large'){
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    @include breakpoint('large'){
+        margin-top: 14rem;
+        margin-bottom: 14rem;
+    }
+}

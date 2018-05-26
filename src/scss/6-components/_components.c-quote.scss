@@ -1,0 +1,22 @@
+.c-quote {
+    background-image: url("../img/home/quote.jpg");
+    text-align: center;
+    color: color('white');
+    padding: 6rem 0;
+}
+
+.c-quote__text {
+    @include ms-respond('font-size', 3);
+    max-width: 40rem;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.c-quote__icon {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    box-sizing: content-box;
+    background: color('primary');
+    border-radius: 100%;
+}

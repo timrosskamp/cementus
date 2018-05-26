@@ -1,0 +1,44 @@
+.o-rotator {
+    perspective: 35rem;
+}
+
+.o-rotator__wrap {
+    transform-style: preserve-3d;
+    transform: translateZ(-1.25em);
+}
+
+.o-rotator__main {
+    transform-style: preserve-3d;
+
+    position: relative;
+    width: 12em;
+    height: 2.5em;
+}
+
+.o-rotator__side {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12em;
+    line-height: 2.5em;
+    text-align: center;
+    background: color('black');
+    color: color('white');
+    text-transform: uppercase;
+
+    &:nth-child(1){
+        transform: translateZ(1.25em);
+    }
+    &:nth-child(2){
+        transform: rotateX(-90deg) translateY(1.25em);
+        transform-origin: center bottom;
+    }
+    &:nth-child(3){
+        transform: translateZ(-1.25em) rotateX(180deg);
+    }
+    &:nth-child(4){
+        transform: rotateX(-270deg) translateY(-1.25em);
+        transform-origin: center top;
+    }
+}

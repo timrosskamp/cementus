@@ -1,0 +1,24 @@
+h1, h2, h3, h4 {
+    //font-family: $font-family--headline;
+    font-weight: 600;
+}
+
+h1 {
+    @include ms-respond('font-size', 4);
+    line-height: 1;
+}
+
+h2 {
+    @include ms-respond('font-size', 3);
+    line-height: 1.1;
+}
+
+h3 {
+    @include ms-respond('font-size', 2);
+    line-height: 1.2;
+}
+
+h4 {
+    @include ms-respond('font-size', 1);
+    line-height: 1.3;
+}

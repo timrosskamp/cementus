@@ -1,0 +1,40 @@
+body {
+	font-size: ms(0);
+	font-family: $font-family--paragraph;
+	font-weight: 300;
+	line-height: 1.5;
+	color: color('grey', 'dark');
+	background: color('black');
+	overflow-x: hidden;
+
+	&.navOpen {
+		//overflow: hidden;
+	}
+}
+
+h1, h2, h3, p {
+	margin-bottom: 1.5rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+em, i {
+	font-style: italic;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+strong, b {
+	font-weight: 600;
+}

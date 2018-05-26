@@ -1,0 +1,20 @@
+.c-header {
+    @include z-index('header');
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    background: color('white');
+}
+
+.c-header__logo {
+    height: 32px;
+}
+
+.c-header__menuButton {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 32px;
+    height: 32px;
+    box-sizing: content-box;
+}

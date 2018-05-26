@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@@title</title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,600" rel="stylesheet"> 
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="c-navigation">
+            <button class="c-navigation__exit  js-menuClose">
+                <svg class="icon icon-close"><use xlink:href="#icon-close"></use></svg>
+                <span class="u-visuallyHidden">Menü schließen</span>
+            </button>
+            <nav class="c-siteNav  c-navigation__nav">
+                <ul class="c-siteNav__list">
+                    @@loop('siteNavItem.html', [
+                        {
+                            "label": "Home",
+                            "url": "index.html",
+                            "disabled": false
+                        }, {
+                            "label": "Über uns",
+                            "url": "#",
+                            "disabled": true
+                        }, {
+                            "label": "News",
+                            "url": "#",
+                            "disabled": true
+                        }, {
+                            "label": "Pflastersteine",
+                            "url": "#",
+                            "disabled": true
+                        }, {
+                            "label": "Transportbeton",
+                            "url": "#",
+                            "disabled": true
+                        }, {
+                            "label": "Spezialanfertigungen",
+                            "url": "spezialanfertigungen.html",
+                            "disabled": false
+                        }, {
+                            "label": "Fotogalerie",
+                            "url": "#",
+                            "disabled": true
+                        }
+                    ])
+                </ul>
+            </nav>
+            <div class="c-navigation__asideNav">
+                <ul class="c-asideNav">
+                    @@loop('asideNavItem.html', [
+                    {
+                        "label": "Kontakt",
+                        "url": "#",
+                        "disabled": true
+                    }, {
+                        "label": "Impressum",
+                        "url": "impressum.html",
+                        "disabled": false
+                    }, {
+                        "label": "Interner Bereich",
+                        "url": "#",
+                        "disabled": true,
+                        "bullet": true
+                    }
+                    ])
+                </ul>
+            </div>
+        </div>
+        <div class="c-siteWrapper">
+            <header class="c-header">
+                <a href="index.html"><img class="c-header__logo" src="assets/img/cementus_logo.svg"></a>
+                <button class="js-menuOpen c-header__menuButton">
+                    <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
+                    <span class="u-visuallyHidden">Menü öffnen</span>
+                </button>
+            </header>

@@ -1,0 +1,25 @@
+@include breakpoint('large'){
+    .c-about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 80px;
+
+        &.-reverse {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}
+
+.c-about__text {
+    padding-top: 80px;
+
+    .-reverse & {
+        padding-top: 0;
+    }
+}
+
+.c-about__img {
+    .-reverse & {
+        padding-top: 80px;
+    }
+}

@@ -1,0 +1,18 @@
+.o-blackBox {
+    background: color('black');
+    color: color('white');
+    padding: 15px 20px;
+
+    position: relative;
+    &:after {
+        $width: 4px;
+        content: "";
+        position: absolute;
+        top: $width;
+        bottom: $width * -1;
+        left: $width;
+        right: $width * -1;
+        border-right: $width solid color('primary');
+        border-bottom: $width solid color('primary');
+    }
+}

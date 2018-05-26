@@ -1,0 +1,48 @@
+.c-special {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &#balkon .jarallax-img,
+    &#bruestung .jarallax-img {
+        object-position: right !important;
+    }
+}
+
+.c-special__content {
+    z-index: 1;
+    color: color('white');
+    margin: 20px 30px;
+    text-align: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.7);
+
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        height: 20px;
+        width: 40px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: color('primary') color('primary') transparent transparent;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: -2px;
+        height: 20px;
+        width: 40px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: transparent transparent color('primary') color('primary');
+    }
+}
+
+.c-spezial__title {
+    margin-bottom: 0.5rem;
+}
